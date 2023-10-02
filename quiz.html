@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kishore's_questions</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body class="body">
+    <!-- Your HTML content here -->
+    <!-- ... -->
+    <div style="text-align: center; margin: 80px auto;">
+        <div >
+            <h1 style="color: rgb(244, 239, 239);font-family: Brush Script MT, Brush Script Std, cursive;" id="text">The Kishore's QUIZ</h1>
+            <h2 id="subhead" style="color: rgb(244, 239, 239);">Test your knowledge here..</h2>    
+            <button  style="height:40px; width:60px; border-radius: 10px;" class="btn" onclick="startQuiz()" id="startbutton"> start</button>
+        </div>
+        <div class="buttons" id="buttonsdiv">
+            <button class="buqq" style="height:40px; width:40px; border-radius: 10px; " onclick="questiononevisible()" id="buttonone"> 1 </button>
+            <button class="buqq" style="height:40px; width:40px; border-radius: 10px; " onclick="questiontwovisible()" id="buttontwo"> 2 </button>
+            <button class="buqq"  style="height:40px; width:40px; border-radius: 10px;" onclick="questionthreevisible()" id="buttonthree"> 3 </button>
+            <button class="buqq"  style="height:40px; width:40px; border-radius: 10px;" onclick="questionfourvisible()" id="buttonfour"> 4 </button>
+            <button class="buqq"  style="height:40px; width:40px; border-radius: 10px;" onclick="questionfivevisible()" id="buttonfive"> 5 </button>
+            
+        </div>
+        <div class="question" id="question0">
+            <h3>Q1.What does HTML stand for?</h3>
+            <form>
+                <table cellpadding = "10px" align="center">
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="0" id="ques1"> Hyper Transfer Markup Language
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="1" id="ques1"> Hyper Text Makeup Language
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="2" id="ques1"> Hyperlink and Text Markup Language
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="3" id="ques1"> Hyper Text Markup Language
+                        </td>
+                    </tr>
+                    <tr >
+                        <td colspan="2" class="ansDiv" id="ansblock0"> Correct!!</td>
+                    </tr>
+                  
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="submit" class="btn" id="0" onclick="ansCheck(this.id)">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <input type="button" value="Next" class="btn" onclick="nextQuestion()">
+        </div>
+        <div class="question" id="question1">
+            <h3>Q2.Which programming language is primarily used for styling web pages?</h3>
+            <form>
+                <table cellpadding = "10px" align="center">
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="quesoneoption0" id="ques1">JavaScript
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="quesoneoption1" id="ques1">Python
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="quesoneoption2" id="ques1">CSS
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="quesoneoption3" id="ques1">Ruby
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ansDiv" id="ansblock1"> Correct!!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="submit" class="btn"  id="1" onclick="ansCheck(this.id)">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <input type="button" value="Next" class="btn" onclick="nextQuestion()">
+        
+        </div>
+        <div class="question" id="question2">
+            <h3>Q3.Which file extension is commonly used for JavaScript files?</h3>
+            <form>
+                <table cellpadding = "10px" align="center">
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="qwerty" id="ques1"> .js
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="qwerty" id="ques1"> .css
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="qwerty" id="ques1"> .html
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="qwerty" id="ques1">None
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ansDiv" id="ansblock2"> Correct!!</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="submit" class="btn" id="2" onclick="ansCheck(this.id)">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+            <input type="button" value="Next" class="btn" onclick="nextQuestion()">
+        
+        </div>
+        <div class="question" id="question3">
+            <h3>Q4. What does the acronym DOM stand for in the context of web development?</h3>
+            <form>
+                <table cellpadding = "10px" align="center">
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="qwert" id="ques1"> Document Object Model
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="qwert" id="ques1"> Data Object Model
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="qwert" id="ques1"> Document Order Model
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="qwert" id="ques1">None
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ansDiv" id="ansblock3"> Correct!!</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="submit" class="btn" id="3" onclick="ansCheck(this.id)">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+            <input type="button" value="Next" class="btn" onclick="nextQuestion()">
+        
+        </div>
+
+        <div class="question" id="question4">
+            <h3>Q5.What does CSS stand for in web development?</h3>
+            <form>
+                <table cellpadding = "10px" align="center">
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="qwer" id="ques1"> Computer Styling Sheets
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="qwer" id="ques1"> Creative Style Selector
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>
+                            <input type="radio" name="question1" value="qwer" id="ques1"> Cascading Style Sheets
+                        </td>
+                        <td>
+                            <input type="radio" name="question1" value="qwer" id="ques1">Content Styling Solutions
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ansDiv" id="ansblock3"> Correct!!</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="submit" class="btn" id="4" onclick="ansCheck(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input type="button" value="Result" class="finalbtn" id="final" onclick="finalScore()">
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        
+        
+        </div>
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
